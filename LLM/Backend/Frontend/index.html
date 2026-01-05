@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM comparision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>
+        LLM comparision Dashboard
+    </h1>
+    <textarea name="prompt" id="Enter your prompt"></textarea>
+    <button onclick="compare()">compare model</button>
+
+    <div class="result">
+        <div class="model-result" id="openai-result">
+            <h2>OpenAI Result</h2>
+            <p id="openai-response"></p>
+        </div>
+        <div class="model-result" id="claude-result">
+            <h2>Claude Result</h2>
+            <p id="claude-response"></p>
+        </div>
+        <div class="model-result" id="gemmini-result">
+            <h2>Gemmini Result</h2>
+            <p id="gemmini-response"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

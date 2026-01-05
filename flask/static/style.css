@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Card */
+.login-container {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.25);
+}
+
+/* Heading */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Label */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Input */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Input focus */
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover */
+button:hover {
+    background: #5a67d8;
+}
+
+/* Home page container */
+.home-container {
+    background: white;
+    width: 420px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+/* Welcome text */
+.home-container h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.home-container p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* Logout button */
+.logout-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #e53e3e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.logout-btn:hover {
+    background: #c53030;
+}

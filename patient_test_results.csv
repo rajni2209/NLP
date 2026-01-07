@@ -1,0 +1,16 @@
+patient_id,patient_name,age,gender,test_name,test_result,unit,reference_range,test_date,lab_technician
+P001,John Doe,45,Male,Hemoglobin,13.8,g/dL,13.5-17.5,2025-01-10,A. Smith
+P002,Jane Smith,32,Female,White Blood Cell Count,6.2,x10^9/L,4.0-11.0,2025-01-10,B. Johnson
+P003,Michael Brown,58,Male,Blood Glucose (Fasting),142.0,mg/dL,70-99,2025-01-11,C. Lee
+P004,Emily Davis,27,Female,Platelet Count,250.0,x10^9/L,150-450,2025-01-11,A. Smith
+P005,Robert Wilson,64,Male,Total Cholesterol,215.0,mg/dL,<200,2025-01-12,D. Martinez
+P006,Sarah Taylor,41,Female,HDL Cholesterol,58.0,mg/dL,>50,2025-01-12,D. Martinez
+P007,David Anderson,36,Male,LDL Cholesterol,145.0,mg/dL,<100,2025-01-13,B. Johnson
+P008,Laura Thomas,50,Female,Triglycerides,180.0,mg/dL,<150,2025-01-13,C. Lee
+P009,James Moore,29,Male,Creatinine,1.0,mg/dL,0.7-1.3,2025-01-14,A. Smith
+P010,Olivia Martin,55,Female,ALT (SGPT),42.0,U/L,7-35,2025-01-14,C. Lee
+P011,William Jackson,61,Male,AST (SGOT),38.0,U/L,8-40,2025-01-15,B. Johnson
+P012,Emma White,34,Female,TSH,2.1,mIU/L,0.4-4.0,2025-01-15,D. Martinez
+P013,Daniel Harris,47,Male,Calcium,9.4,mg/dL,8.6-10.2,2025-01-16,A. Smith
+P014,Sophia Clark,23,Female,Iron,78.0,µg/dL,50-170,2025-01-16,C. Lee
+P015,Anthony Lewis,69,Male,PSA,5.6,ng/mL,<4.0,2025-01-17,B. Johnson

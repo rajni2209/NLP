@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Art Generator</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+    button {
+      background: #00bfff;
+      cursor: pointer;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 90%;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AI Art Generator</h1>
+
+  <input id="prompt" type="text" placeholder="Enter prompt..." value="abstract neon waves" />
+  <button onclick="generateArt()">Generate</button>
+
+  <div>
+    <img id="result" src="" alt="Generated Art will appear here" />
+  </div>
+
+  <script>
+    async function generateArt() {
+      const prompt = document.getElementById("prompt").value;
+
+      const res = await fetch("http://127.0.0.1:5000/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          prompt: prompt,
+          width: 512,
+          height: 512,
+          seed: 0
+        })
+      });
+
+      const data = await res.json();
+
+      if (data.status === "success") {
+        document.getElementById("result").src =
+          "http://127.0.0.1:5000/image?t=" + new Date().getTime();
+      }
+    }
+  </script>
+
+</body>
+</html>
